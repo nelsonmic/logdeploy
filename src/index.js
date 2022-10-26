@@ -12,15 +12,15 @@ import {
 
 const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/logdeploy",
     element: <App />
   },
     {
-    path: "/about",
+    path: "/logdeploy/about",
     element: <About/>
   },
     {
-    path: "/careers",
+    path: "/logdeploy/career",
     element: <Careers />
   }
 ])
