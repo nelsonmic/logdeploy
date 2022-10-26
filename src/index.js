@@ -6,21 +6,21 @@ import About from "./routes/About";
 import Careers from "./routes/Careers";
 import reportWebVitals from './reportWebVitals';
 import {
-  createBrowserRouter,
+  createHashRouter,
   RouterProvider,
 } from "react-router-dom";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
-    path: "/logdeploy",
+    path: "/",
     element: <App />
   },
     {
-    path: "/logdeploy/about",
+    path: "/about",
     element: <About/>
   },
     {
-    path: "/logdeploy/career",
+    path: "/careers",
     element: <Careers />
   }
 ])
