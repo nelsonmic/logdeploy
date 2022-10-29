@@ -32,4 +32,4 @@ jobs:
           header: Preview environment
           message: |
             ## Preview environment
-            https://nelsonmic.github.io/logdeploy/${{ steps.generate_slug.outputs.slug }}/preview-branch
+            https://nelsonmic.github.io/logdeploy/${{ steps.generate_slug.outputs.slug }}/
