@@ -9,8 +9,8 @@ jobs:
     runs-on: ubuntu-20.04
     continue-on-error: true
     steps:
-      - name: Checkout code
-        uses: actions/checkout@v2
+      # - name: Checkout code
+      #   uses: actions/checkout@v2
       # - name: Use node.js 14.15
       #   uses: actions/setup-node@v1
       #   with:
@@ -24,8 +24,8 @@ jobs:
         uses: JamesIves/github-pages-deploy-action@4.1.1
         with:
           branch: preview-branch
-          folder: preview-branch
-          # target-folder: ${{ steps.generate_slug.outputs.slug }}
+          folder: build
+          target-folder: ${{ steps.generate_slug.outputs.slug }}
       - name: Publish env
         uses: marocchino/sticky-pull-request-comment@v2
         with:
