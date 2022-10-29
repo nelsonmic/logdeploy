@@ -32,3 +32,4 @@ jobs:
           header: Preview environment
           message: |
             ## Preview environment
+            https://my-org.github.io/my-repo/${{ steps.generate_slug.outputs.slug }}/
