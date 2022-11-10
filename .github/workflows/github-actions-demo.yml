@@ -25,7 +25,7 @@ jobs:
         with:
           branch: preview-env
           folder: build
-          target-folder: ${{ steps.generate_slug.outputs.slug }}
+          target-folder: ${{ steps.generate_slug.outputs.slug }}/preview-branch
       - name: Publish env
         uses: marocchino/sticky-pull-request-comment@v2
         with:
